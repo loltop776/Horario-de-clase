@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario Clase</title> <!--El style sirve para añadir estilo a algo en concreto-->
+    <!--Background color es para añadir color al fondo-->
+    <!--Text align es para posicionar el texto-->
+    <!--Border collapse es para fuisionar los bordes de las líneas-->
+    <!--Width es para la amplitud-->
+    <style>                  
+        #tabla{
+            width: 100%;
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #M4{
+            background-color: aqua; 
+        }
+        #M121{
+            background-color: bisque;
+        }
+        #M7{
+            background-color: orange;
+        }
+        #M122{
+            background-color: darkseagreen;
+        }
+        #M6{
+            background-color: hotpink;
+        }
+        #M11{
+            background-color: red;
+        }
+        #M8{
+            background-color: rgb(87, 87, 140);
+        }
+        #Tuto{
+            background-color: blueviolet;
+        }
+        #Patio{
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>HORARIO DE SMX2</h1>
+    <h3>Jesús Fortea</h3>
+    <table border="2" id="tabla"> <!-- Esto sirve para crear una tabla-->
+        <tr>                      <!-- Esto sirve para hacer una fila-->
+            <th>Horario</th>      <!--Eston sirve para crear un encabezado-->
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>                  <!--Esto sirve para crear una celda-->
+                15:00 <br> 15:55
+            </td>
+            <td rowspan="2" id="M4"> <!--rowspan sirve para ocupar dos celdas en vertical (filas)-->
+                M4 S.Op.Xa. <br>
+                Nuri/Fatima
+            </td>
+            <td rowspan="2" id="M122">
+                M12.2 Síntesi <br>
+                Gerard/Pedro
+            </td>
+            <td rowspan="2">
+                -
+            </td>
+            <td rowspan="2" id="M7">
+                M7 Servicios <br>
+                Pedro
+            </td>
+            <td rowspan="2" id="M8">
+                M8 Web <br>
+                Alberto
+            </td>
+        </tr>
+        <tr>
+            <td>15:55 <br> 16:50</td>
+        </tr>
+        <tr>
+            <td>16:50 <br> 17:45</td>
+            <td rowspan="2" id="M121">M12.1 Síntesi <br> Agnès/Alberto</td>
+            <td rowspan="2" id="M4">M4 S.Op.Xa <br> Nuri/Fatima</td>
+            <td id="M11">M11 Inglés <br> Alex</td>
+            <td id="M121">M12.1 Síntesi <br> Agnès/Alberto</td>
+            <td id="M11">M11 Inglés <br> Alex</td>
+        </tr>
+        <tr>
+            <td>17:45 <br> 18:40</td>
+            <td id="M8">M8 Web <br> Alberto</td>
+            <td id="M11">M11 Inglés <br> Alex</td>
+            <td id="Tuto">Tutoria <br> Alex</td>
+        </tr>
+        <tr>
+            <td>18:40 <br> 19:10</td>
+            <td colspan="5" id="Patio">PATIO</td> <!--colspan sirve para juntar celdas en horizontal (columnas)-->
+        </tr>
+        <tr>
+            <td>19:10 <br> 20:05</td>
+            <td rowspan="2" id="M7">M7 Servicios <br> Pedro/Agnès</td>
+            <td rowspan="2" id="M6">M6 Seguridad <br> Velasco</td>
+            <td rowspan="2" id="M122">M12.2 Síntesi <br> Gerard/Pedro</td>
+            <td id="M7">M7 Servicios <br> Agnès</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>20:05 <br> 21:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
